@@ -28,7 +28,7 @@ game_is_on = True
 while game_is_on:
     if choice == 'yes':
         user_input = int(input('Enter a position from 1 to 9 on the board\n'))
-        user_list.append(user_input)
+        user_list.append(user_input-1)
         board_list[user_input - 1] = user_icon
         computer_input = randint(1, 9)
         while True:
